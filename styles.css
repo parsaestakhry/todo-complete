@@ -1,0 +1,20 @@
+body {
+    background-color: #202020;
+    color: white;
+    font-family: sans-serif;
+}
+
+.todo-head{
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 62px;
+    display: flex;
+    justify-content: start;
+}
+
+.ph-check-square {
+    margin-top: 2px;
+    font-weight: bolder;
+    font-size: 62px;
+}
