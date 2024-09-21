@@ -1,13 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <div class="header">
+    <i class="ph-fill ph-check-square"></i>
+    <label for="checkmark" class="logo-text">TODO</label>
+
+
+  </div>
+
+  <div class="todo-container">
+
+    <div class="status-container">
+      <div class="status-card">
+        <div class="status-info">
+          <h2>Task Done</h2>
+          <p>Keep it up</p>
+        </div>
+        <div class="status-progress">
+          <span>1/3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-input">
+      <input type="text" placeholder="Write your next task">
+      <button class="add-btn">+</button>
+    </div>
+
+    <ul class="tasks-list">
+      <li class="task">
+        <div class="task-completed"></div>
+        <span>Build a todo app</span>
+        <div class="task-actions">
+          <button class="edit-btn">&#9998;</button>
+          <button class="delete-btn">&#128465;</button>
+        </div>
+      </li>
+      <li class="task">
+        <div class="task-pending"></div>
+        <span>Write an article about building a todo app</span>
+        <div class="task-actions">
+          <button class="edit-btn">&#9998;</button>
+          <button class="delete-btn">&#128465;</button>
+        </div>
+      </li>
+      <li class="task">
+        <div class="task-pending"></div>
+        <span>Publish the article</span>
+        <div class="task-actions">
+          <button class="edit-btn">&#9998;</button>
+          <button class="delete-btn">&#128465;</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
